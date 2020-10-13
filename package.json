@@ -14,7 +14,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:no-fix": "eslint --cache src/**/*.js",
+    "lint": "eslint --cache --fix src/**/*.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint:no-fix"
+    }
   }
 }
