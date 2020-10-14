@@ -1,0 +1,21 @@
+.profileInfo__section {
+    display: flex;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 600px) {
+        aside {
+            width: 33%;
+            float:left
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        aside {
+            width: 30%
+        }
+    }
+
+    article {
+        padding-left: 5px;
+    }
+}

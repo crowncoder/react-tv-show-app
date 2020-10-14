@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { CircularProgress, makeStyles } from '@material-ui/core';
 
-const GlobalLoading = ({ open }) => {
-  const [loading, setLoading] = useState(open);
+const GlobalLoading = () => {
 
   const useStyles = makeStyles({
     overlay: {
@@ -23,25 +22,11 @@ const GlobalLoading = ({ open }) => {
 
   const classes = useStyles();
 
-  useEffect(() => {
-    if (loading !== open) {
-      setLoading(open);
-    }
-  }, [open, loading, setLoading]);
-
-  return loading ? (
-    <div className={classes.overlay} open={loading}>
-      <CircularProgress size={75} className={classes.loading} />
+  return (
+    <div className={classes.overlay} >
+      <CircularProgress size={75} />
     </div>
-  ) : null;
-};
-
-GlobalLoading.propTypes = {
-  open: PropTypes.bool,
-};
-
-GlobalLoading.defaultProps = {
-  open: false,
+  );
 };
 
 export default GlobalLoading;

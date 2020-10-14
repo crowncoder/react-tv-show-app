@@ -1,0 +1,13 @@
+$container-padding:0 5px;
+@media screen and (max-width: 600px) {
+    .page__container {
+        width:100%;
+        padding:$container-padding
+    }
+}
+@media screen and (min-width: 900px) {
+    .page__container {
+        width:800px;
+        padding:$container-padding
+    }
+}
