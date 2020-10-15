@@ -12,9 +12,9 @@ const Routes = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path='/' render={() => (
-          <Redirect to="show" />
+          <Redirect to="show/6771" />
         )} />
-        <Route exact path="/show" component={TVShowPage} />
+        <Route exact path="/show/:tvShowId" component={TVShowPage} />
         <Route exact path="/episodes/:episodeId/:episodeName" component={EpisodeDetailPage} />
       </Switch>
     </BrowserRouter>

@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import ProfileInfoCoverImg from './profile-info-cover-img';
 import ProfileInfoDescrption from './profile-info-description';
 import styles from './profile-info-section.module.scss';
-const MaterialSection = memo((props)=>{
+const MaterialSection = memo((props) => {
+    const { sectionInfo: { image, summary: description } } = props;
     return (
         <div className={styles.profileInfo__section}>
             <aside>
-                <ProfileInfoCoverImg />
+                <ProfileInfoCoverImg image={image} />
             </aside>
             <article>
-                <ProfileInfoDescrption />
+                <ProfileInfoDescrption description={description} />
             </article>
         </div>
     )

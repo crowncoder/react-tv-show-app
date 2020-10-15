@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 import { ErrorBoundary } from './components';
 import Routes from './routes'
 import './index.css';
@@ -7,9 +9,11 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <Routes></Routes>
-    </ErrorBoundary>
+    <Provider store={store}>
+      <ErrorBoundary>
+        <Routes />
+      </ErrorBoundary>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

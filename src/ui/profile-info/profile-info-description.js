@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import styles from './profile-info-description.module.scss';
-const ProfileInfoDescrption= memo((props)=>{
+const ProfileInfoDescrption = memo(({ description }) => {
     return (
-        <p className={styles.profileInfo__title}>The Powerpuff Girls</p>
+        <div className={styles.profileInfo__des} dangerouslySetInnerHTML={{ __html: description }} />
     )
 })
 

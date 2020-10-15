@@ -1,0 +1,1 @@
+export const TV_MAZE_API_ENDPOINT = 'https://api.tvmaze.com';
