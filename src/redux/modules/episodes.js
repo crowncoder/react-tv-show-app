@@ -1,5 +1,3 @@
-import { episodes } from ".";
-
 // Action Types
 const GET_EPISODE_LIST_REQUEST = 'GET_EPISODE_LIST_REQUEST';
 const GET_EPISODE_LIST_SUCCESS = 'GET_EPISODE_LIST_SUCCESS';

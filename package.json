@@ -23,6 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint:no-fix": "eslint --cache src/**/*.js",
     "lint": "eslint --cache --fix src/**/*.js",
@@ -44,8 +45,13 @@
     ]
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.18.2",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.0"
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "husky": "^4.3.0",
+    "redux-mock-store": "^1.5.4"
   },
   "husky": {
     "hooks": {
@@ -56,5 +62,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

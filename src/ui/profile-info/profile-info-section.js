@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ProfileInfoCoverImg from './profile-info-cover-img';
 import ProfileInfoDescrption from './profile-info-description';
 import styles from './profile-info-section.module.scss';
-const MaterialSection = memo((props) => {
+const ProfileInfoSection = memo((props) => {
     const { sectionInfo: { image, summary: description } } = props;
     return (
         <div className={styles.profileInfo__section}>
@@ -17,8 +17,13 @@ const MaterialSection = memo((props) => {
     )
 })
 
-MaterialSection.propTypes = {
-
+ProfileInfoSection.propTypes = {
+    sectionInfo: PropTypes.shape({
+        image: PropTypes.shape({
+            meidium: PropTypes.string
+        }),
+        summary: PropTypes.string
+    })
 }
 
-export default MaterialSection;
+export default ProfileInfoSection;

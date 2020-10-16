@@ -1,10 +1,9 @@
 import React, { memo } from 'react';
-import PropTypes from 'prop-types';
 import ProfileInfo from './profile-info';
 import EpisodeList from './episode-list';
 
 
-const TVShowInfo = memo((props) => {
+const TVShowInfo = memo(() => {
     return (
         <>
             <ProfileInfo />    
@@ -12,9 +11,5 @@ const TVShowInfo = memo((props) => {
         </>
     )
 })
-
-TVShowInfo.propTypes = {
-
-}
 
 export default TVShowInfo;

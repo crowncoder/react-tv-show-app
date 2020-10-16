@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { CircularProgress, makeStyles } from '@material-ui/core';
 
 const GlobalLoading = () => {
 
   const useStyles = makeStyles({
     overlay: {
-      position: 'fixed',
+      position: 'absolute',
       top: 0,
       right: 0,
       bottom: 0,
@@ -23,7 +23,7 @@ const GlobalLoading = () => {
 
   return (
     <div className={classes.overlay} >
-      <CircularProgress size={75} />
+      <CircularProgress className={classes.loading} size={75} />
     </div>
   );
 };

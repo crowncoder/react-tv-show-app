@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileInfoDescription /> unit test renders correctly 1`] = `
+<div
+  className="profileInfo__des"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "A simplate description",
+    }
+  }
+/>
+`;

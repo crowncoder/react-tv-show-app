@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileInfoCoverImg /> unit test renders correctly 1`] = `
+<figure
+  className="profileInfo__figure"
+>
+  <img
+    alt="The Powerpuff Girls"
+    src="abc.com/image"
+  />
+</figure>
+`;

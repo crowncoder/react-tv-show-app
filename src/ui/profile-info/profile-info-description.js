@@ -8,7 +8,7 @@ const ProfileInfoDescrption = memo(({ description }) => {
 })
 
 ProfileInfoDescrption.propTypes = {
-
+    description: PropTypes.string
 }
 
 export default ProfileInfoDescrption;

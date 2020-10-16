@@ -1,5 +1,4 @@
 import React, { memo, useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useParams } from "react-router-dom";
 import {
@@ -10,7 +9,7 @@ import {
 import { getEpisodeList } from '../../redux/modules/episodes';
 
 
-const EpisodeList = memo((props) => {
+const EpisodeList = memo(() => {
   const { tvShowId } = useParams();
   const dispatch = useDispatch();
   const episodeList = useSelector(state => state.episodes.episodeList);
@@ -84,9 +83,5 @@ const EpisodeList = memo((props) => {
     </TableContainer >
   )
 })
-
-EpisodeList.propTypes = {
-
-}
 
 export default EpisodeList;

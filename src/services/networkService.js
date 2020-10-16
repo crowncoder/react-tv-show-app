@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { TV_MAZE_API_ENDPOINT } from '../constants';
+
 const apiClient = axios.create({ timeout: 6000 });
 
 const getRequest = (path) => {
@@ -19,6 +20,7 @@ const postRequest = (path, data) => {
     });
 }
 export {
+    apiClient,
     getRequest,
     postRequest
 }

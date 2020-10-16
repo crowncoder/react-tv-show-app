@@ -6,7 +6,7 @@ import { ProfileInfoHeader, ProfileInfoSection } from '../../ui';
 import { getEpisode } from '../../redux/modules/episodes';
 
 
-const EpisodeDetail = memo((props) => {
+const EpisodeDetail = memo(() => {
     const { state } = useLocation();
     const { episodeId } = useParams();
     const dispatch = useDispatch();
@@ -33,8 +33,5 @@ const EpisodeDetail = memo((props) => {
     )
 })
 
-EpisodeDetail.propTypes = {
-
-}
 
 export default EpisodeDetail;

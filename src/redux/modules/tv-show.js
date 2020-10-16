@@ -49,11 +49,11 @@ export function getTvShowInfo(tvShowId) {
         } = tvShowActions;
         dispatch(getTvShowRequest());
         return tvShowService.getTvShowInfo(tvShowId)
-            .then(({data}) => {
+            .then(({ data }) => {
                 dispatch(getTvShowSuccess(data));
-    })
-			.catch (error => dispatch(getTvShowError(error)));
-};
+            })
+            .catch(error => dispatch(getTvShowError(error)));
+    };
 }
 
 export default tvShowReducer;

@@ -13,7 +13,9 @@ const ProfileInfoCoverImg = memo((props) => {
 })
 
 ProfileInfoCoverImg.propTypes = {
-
+    image: PropTypes.shape({
+        meidium: PropTypes.string
+    })
 }
 
 export default ProfileInfoCoverImg;

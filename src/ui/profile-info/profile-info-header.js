@@ -8,7 +8,7 @@ const ProfileInfoHeader = memo(({ name }) => {
 })
 
 ProfileInfoHeader.propTypes = {
-
+    name: PropTypes.string
 }
 
 export default ProfileInfoHeader;

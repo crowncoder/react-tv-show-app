@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileInfo /> unit test renders correctly 1`] = `
+<div
+  className="profileInfo__section"
+>
+  <aside>
+    <Memo()
+      image={
+        Object {
+          "medium": "abc.com/image",
+        }
+      }
+    />
+  </aside>
+  <article>
+    <Memo()
+      description="a simple summary"
+    />
+  </article>
+</div>
+`;
