@@ -10,7 +10,6 @@ const EpisodeDetail = memo(() => {
     const { state } = useLocation();
     const { episodeId } = useParams();
     const dispatch = useDispatch();
-
     // get historical episode data from location
     const historicalEpisodeData = get(state, 'episode', undefined);
     // get episode data from redux store
