@@ -1,9 +1,9 @@
 import React from 'react';
-import TVShow from '../../components/tv-show';
+import { TvShow } from '../../components';
 import styles from '../index.module.scss';
 
-const TVShowPage = () => {
-    return (<div className={styles.page__container}><TVShow /></div>);
+const TvShowPage = () => {
+    return (<div className={styles.page__container}><TvShow /></div>);
 }
- 
-export default TVShowPage;
+
+export default TvShowPage;

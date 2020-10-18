@@ -1,7 +1,37 @@
-.profileInfo__figure {
-    display: flex;
-    margin:0;
-    img {
-        width:100%;
+$figure-margin: 0px;
+@mixin small-image{
+    width: 105px;
+    height: 145px;
+}
+@mixin medium-image {
+    width: 210px;
+    height: 295px;
+}
+@media screen and (max-width: 600px) {
+    .profileInfo__figure {
+        margin: $figure-margin;
+        img {
+           @include small-image;
+        }
+    }
+
+    .skeleton_img {
+        @include small-image;
+        // temporal solution to override Mui styles
+        height: 145px !important;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .profileInfo__figure {
+        margin: $figure-margin;
+        img {
+            @include medium-image;
+         }
+    }
+    .skeleton_img {
+        @include medium-image;
+        // temporal solution to override Mui styles
+        height: 295px !important;
     }
 }

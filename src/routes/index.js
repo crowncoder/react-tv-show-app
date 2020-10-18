@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import { LoadingProgress } from '../ui';
 
-const TVShowPage = lazy(() => import(/* webpackChunkName: "TVShowPage" */ '../pages/tv-show-page/index'));
+const TvShowPage = lazy(() => import(/* webpackChunkName: "TvShowPage" */ '../pages/tv-show-page/index'));
 const EpisodeDetailPage = lazy(() => import(/* webpackChunkName: "EpisodeDetailPage" */ '../pages/episode-detail-page'));
 
 const Routes = () => (
@@ -14,7 +14,7 @@ const Routes = () => (
         <Route exact path='/' render={() => (
           <Redirect to="show/6771" />
         )} />
-        <Route exact path="/show/:tvShowId" component={TVShowPage} />
+        <Route exact path="/show/:tvShowId" component={TvShowPage} />
         <Route exact path="/episodes/:episodeId/:episodeName" component={EpisodeDetailPage} />
       </Switch>
     </BrowserRouter>

@@ -13,6 +13,13 @@ code {
 }
 
 #root {
-  display:flex;
+  display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* temporal solution to adapt the mui pagnation to mobile */
+  .MuiTablePagination-selectRoot {
+    margin-right: 0px !important;
+  }
 }
