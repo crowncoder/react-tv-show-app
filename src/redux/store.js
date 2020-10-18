@@ -1,5 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import errorMiddleware from './middlewares/errorHandler';
 import rootReducer from './rootReducer';
 import { tvShowService, episodeService } from '../services';
 
@@ -12,6 +13,7 @@ const enhancers = compose(
                 episodeService
             })
         ),
+        applyMiddleware(errorMiddleware)
     )
 );
 const store = createStore(rootReducer, enhancers);
