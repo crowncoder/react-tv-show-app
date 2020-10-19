@@ -25,7 +25,7 @@
     "build": "react-app-rewired build",
     "build:analyze": "react-app-rewired build --analyze",
     "test": "react-app-rewired test",
-    "test:ci":"react-app-rewired test --watchAll=false",
+    "test:ci": "react-app-rewired test --watchAll=false",
     "test:coverage": "react-app-rewired test --coverage --watchAll=false",
     "eject": "react-app-rewired eject",
     "lint:no-fix": "eslint --cache src/**/*.js",
@@ -57,7 +57,8 @@
     "enzyme-to-json": "^3.6.1",
     "husky": "^4.3.0",
     "react-app-rewired": "^2.1.6",
-    "redux-mock-store": "^1.5.4"
+    "redux-mock-store": "^1.5.4",
+    "webpack-bundle-analyzer": "^3.9.0"
   },
   "husky": {
     "hooks": {
