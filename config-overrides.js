@@ -1,5 +1,9 @@
-const { useBabelRc, override } = require('customize-cra')
+const { useBabelRc, addBundleVisualizer, override } = require('customize-cra')
 
 module.exports = override(
-  useBabelRc()
+  useBabelRc(),
+  addBundleVisualizer({
+    analyzerMode: 'static',
+    reportFilename: 'report.html',
+  },true),
 );
