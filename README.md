@@ -3,6 +3,21 @@ A test task that is to implement a TV show page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+- [x] Enable resources minifying in Webpack (default configration by CRA)
+- [x] Enable chunk-splitting and tree-shaking in Webpack (default configration by CRA)
+- [x] Replace the lodash by lodash-es which support tree-shaking to reduce the package size
+- [x] Support Hot Module Reload
+- [x] Use redux as the state management library and redux-thunk as the asynchronous action handling middleware
+- [x] Redux resouce files management follow the proposal[ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
+- [x] Use the react hooks and react-redux hook api
+- [x] Use React memo to avoid unnecessary component renders.
+- [x] Use React lazy and suspence api to realize the lazy loading
+- [x] Display a skeleton on the screen during the data loading to improve user experience
+- [x] Unit tests by using Jest and Enzyme on both UI and redux are involved.
+- [x] Use react-app-rewired and customize-cra to override the default webpack configration
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,33 +54,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
