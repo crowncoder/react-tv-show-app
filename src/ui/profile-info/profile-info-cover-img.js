@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 import Skeleton from '@material-ui/lab/Skeleton';
 import styles from './profile-info-cover-img.module.scss'
 

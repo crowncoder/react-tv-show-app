@@ -1,7 +1,7 @@
 import React, { useEffect, memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation, useParams } from 'react-router-dom'
-import { get, isUndefined } from 'lodash';
+import { get, isUndefined } from 'lodash-es';
 import { ProfileInfoHeader, ProfileInfoSection } from '../../ui';
 import { getEpisode } from '../../redux/modules/episodes';
 
