@@ -4,8 +4,8 @@ A test task that is to implement a TV show page
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
-- [x] Enable resources minifying in Webpack (default configration by CRA)
-- [x] Enable chunk-splitting and tree-shaking in Webpack (default configration by CRA)
+- [x] Enable resources minifying in Webpack (defalut configration by CRA)
+- [x] Enable chunk-splitting and tree-shaking in Webpack (defalut configration by CRA)
 - [x] Replace the lodash by lodash-es which support tree-shaking to reduce the package size
 - [x] Support Hot Module Reload
 - [x] Use redux as the state management library and redux-thunk as the asynchronous action handling middleware
