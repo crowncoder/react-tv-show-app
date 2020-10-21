@@ -8,8 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Enable chunk-splitting and tree-shaking in Webpack (defalut configration by CRA)
 - [x] Replace the lodash by lodash-es which support tree-shaking to reduce the package size
 - [x] Support Hot Module Reload
+- [x] Use CSS Mdoules to make the styles scoped
+- [x] Responsive layout on desktop,laptop and mobile.
 - [x] Use redux as the state management library and redux-thunk as the asynchronous action handling middleware
-- [x] Redux resouce files management follow the proposal[ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
+- [x] Redux resouce files management follows the proposal[ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
 - [x] Use the react hooks and react-redux hook api
 - [x] Use React memo to avoid unnecessary component renders.
 - [x] Use React lazy and suspence api to realize the lazy loading
