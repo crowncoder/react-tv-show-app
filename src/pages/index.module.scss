@@ -8,6 +8,7 @@ $container-padding:0 5px;
 @media screen and (min-width: 601px) {
     .page__container {
         max-width:800px;
+        width:100%;
         padding:$container-padding
     }
 }
