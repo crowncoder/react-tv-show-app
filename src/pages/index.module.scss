@@ -5,9 +5,9 @@ $container-padding:0 5px;
         padding:$container-padding
     }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 601px) {
     .page__container {
-        width:800px;
+        max-width:800px;
         padding:$container-padding
     }
 }
